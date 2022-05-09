@@ -1,0 +1,15 @@
+@use "styles/theme" as *;
+
+.main {
+  width: min(100% - 1.2rem, 1280px);
+  margin-inline: auto;
+  h1 {
+    font-size: 3.2rem;
+  }
+  > *:not(h1) {
+    color: $secondary-text;
+  }
+  h4 {
+    font-style: italic;
+  }
+}
