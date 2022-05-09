@@ -1,6 +1,6 @@
 import styles from "styles/components/navbar.module.scss";
 
-export default () => {
+export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <ul>
@@ -11,4 +11,4 @@ export default () => {
       </ul>
     </nav>
   );
-};
+}

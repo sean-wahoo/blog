@@ -8,7 +8,7 @@ interface HomeProps {
   posts: any[];
 }
 
-export default ({ posts }: HomeProps) => {
+export default function Index({ posts }: HomeProps) {
   return (
     <div>
       {posts.map(({ url, frontmatter }) => {
@@ -24,7 +24,7 @@ export default ({ posts }: HomeProps) => {
       })}
     </div>
   );
-};
+}
 
 export const getStaticProps: GetStaticProps = async () => {
   const files = fs.readdirSync("content/articles");

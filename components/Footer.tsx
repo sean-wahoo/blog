@@ -1,3 +1,3 @@
-export default () => {
-    return <footer>hello</footer>
+export default function Footer() {
+  return <footer>hello</footer>;
 }
